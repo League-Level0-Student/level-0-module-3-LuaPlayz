@@ -13,7 +13,9 @@ public class RobotColorChooser {
 	public static void main(String[] args) {
 		//1. Create a new Robot
 		Robot robot=new Robot();
-		   
+		   for (int g = 0; g < 100000000; g++) {
+			
+		
 		//3. Ask the user what color they would like the robot to draw
 		String color= JOptionPane.showInputDialog(null, "WHAT COLOR DO YOU WANT THE MAGESTIC ROBOT TO DRAW WITH MY CHILD???");
 		
@@ -54,4 +56,4 @@ robot.turn(90);
 
 	}
 	}
-
+}
