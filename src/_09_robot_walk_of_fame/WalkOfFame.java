@@ -13,7 +13,22 @@ public class WalkOfFame {
 		// You also need to show the robot to see the result of this line.
 rob.setX(0);
 		// 2. Make the robot draw a star shape. Hint: 144.
-rob.setAngle(144);
+rob.penDown();
+rob.setPenColor(0,100,25);
+rob.setSpeed(100);
+rob.turn(90);
+for (int i = 0; i < 30; i++) {
+	for (int s = 0; s < 5; s++) {
+	
+	rob.move(30);
+rob.turn(144);
+}
+	rob.penUp();
+	rob.move(30);
+	rob.penDown();
+}
+rob.hide();
+
 		// 3. Set the size of the star to 30.
 
 		/** THE CHALLENGE: **/
@@ -24,6 +39,6 @@ rob.setAngle(144);
 		 * Hint: The distance between stars is 50.
 		 */
 
+	
 	}
-
 }

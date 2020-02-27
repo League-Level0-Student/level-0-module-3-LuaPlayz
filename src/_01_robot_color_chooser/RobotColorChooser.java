@@ -25,13 +25,13 @@ public class RobotColorChooser {
 		//5. Use an if/else statement to set the pen color that the user requested
 		
 if (color.equals("blue")) {
-	robot.setPenColor(Color.blue);
+	robot.setPenColor(9, 53, 125);
 }else if (color.equals("green")) {
-	robot.setPenColor(Color.GREEN);
+	robot.setPenColor(3, 79, 0);
 }else if (color.equals("red")) {
-	robot.setPenColor(Color.RED);
+	robot.setPenColor(145, 0, 0);
 }else if (color.equals("yellow")) {
-	robot.setPenColor(Color.yellow);
+	robot.setPenColor(252, 230, 33);
 }
 
 
@@ -44,13 +44,16 @@ else {
 
 
 //2. Make the robot draw a shape (this will take more than one line of code)
+robot.setSpeed(100);
 robot.penDown();
-robot.setSpeed(200);
-for(int i=0;i<5; i++) {
-robot.move(200);
+robot.move(100);
 robot.turn(90);
+robot.move(100);
+robot.turn(90);
+robot.move(100);
+robot.turn(90);
+robot.move(100);
 
-}
         //7. Put a loop around your code so that you keep asking the user for more colors & drawing them
 		
 
